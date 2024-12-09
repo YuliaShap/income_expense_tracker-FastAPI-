@@ -1,11 +1,17 @@
-from pydantic import BaseSettings
+import os
+
+from pydantic_settings import BaseSettings
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from dotenv import load_dotenv
+
+# Завантажуємо .env файл
+load_dotenv()
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "postgresql+psycopg2://user:password@localhost/dbname"
+    DATABASE_URL: str = os.getenv("DATABASE_URL")
 
     class Config:
         env_file = ".env"
