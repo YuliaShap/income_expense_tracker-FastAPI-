@@ -8,80 +8,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <h1>Ласкаво просимо до вашого фінансового трекера!</h1>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col col-sm-6 col-xs-12">
-                                <h4 class="title">Data <span>List</span></h4>
-                            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-9 col-xs-12">
+                            <h4 class="title">Розходи</h4>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 text-right">
                             <div class="col-sm-6 col-xs-12 text-right">
-                                <div class="btn_group">
-                                    <a href="" class="btn">Add New</a>
-                                </div>
+                            <div class="btn_group">
+                                <a href="" class="btn">Додати</a>
                             </div>
                         </div>
+                        </div>
                     </div>
-                    <div class="panel-body table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Full Name</th>
-                                    <th>Age</th>
-                                    <th>Job Title</th>
-                                    <th>City</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Vincent Williamson</td>
-                                    <td>31</td>
-                                    <td>iOS Developer</td>
-                                    <td>Sinaai-Waas</td>
-                                    <td>
-                                        <ul class="action-list">
-                                            <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
-                                            <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <!-- Додаткові рядки таблиці -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="row">
-                            <div class="col col-sm-6 col-xs-6">showing <b>5</b> out of <b>25</b> entries</div>
-                            <div class="col-sm-6 col-xs-6">
-                                <ul class="pagination d-none d-sm-block pull-right">
-                                    <li><a href="#">Prev</a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">Next</a></li>
-                                </ul>
-                                <ul class="pagination visible-xs pull-right">
-                                    <li><a href="#">Prev</a></li>
-                                    <li><a href="#">Next</a></li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="panel-body table-responsive">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Категорія</th>
+                            <th>Сума</th>
+                            <th>Дата</th>
+                            <th>Автор</th>
+                            <th>Дії</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Продукти харчування</td>
+                                <td>31,05</td>
+                                <td>21.05.24</td>
+                                <td>Юлія</td>
+                                <td>
+                                    <ul class="action-list">
+                                        <li><a href="#" class="view" data-tip="View"><i class="fas fa-eye"></i></a></li>
+                                        <li><a href="#" class="edit" data-tip="Edit"><i class="fas fa-pencil-alt"></i></a></li>
+                                        <li><a href="#" class="delete" data-tip="Delete"><i class="fas fa-trash"></i></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col col-xs-6">Showing <b>5</b> out of <b>25</b> entries</div>
+                        <div class="col-xs-6">
+                            <ul class="pagination hidden-xs pull-right">
+                                <li><a href="#"><</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">></a></li>
+                            </ul>
+                            <ul class="pagination visible-xs pull-right">
+                                <li><a href="#"><</a></li>
+                                <li><a href="#">></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
